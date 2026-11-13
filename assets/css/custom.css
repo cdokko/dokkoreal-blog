@@ -60,3 +60,15 @@ html[data-theme='light'][data-ground='brown'] {
 /* --- Footer: hide Nuno's brown/green switch; the site uses the brown palette only.
        LEVER: delete this rule to bring the switch back. --- */
 .ground-toggle { display: none; }
+
+/* --- Logomark before "Dokko-Real" in the nav, on every page.
+       Drawn as a mask filled with the accent, so it follows --accent-dark/--accent-light.
+       Decorative: screen readers still read just the brand name.
+       LEVERS: width/height = size; gap = space before the name; delete both rules to remove. --- */
+.nav__brand { display: inline-flex; align-items: center; gap: 0.45em; }
+.nav__brand::before {
+  content: ""; flex: none; width: 1.6em; height: 1.6em;
+  background-color: var(--accent);
+  -webkit-mask: url("/images/logomark.svg") center / contain no-repeat;
+          mask: url("/images/logomark.svg") center / contain no-repeat;
+}
