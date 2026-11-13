@@ -72,3 +72,8 @@ html[data-theme='light'][data-ground='brown'] {
   -webkit-mask: url("/images/logomark.svg") center / contain no-repeat;
           mask: url("/images/logomark.svg") center / contain no-repeat;
 }
+
+/* --- About portrait on phones: Nuno crops it to a 3:2 strip 28% from the top;
+       this photo's face sits lower, so move the strip down.
+       LEVER: the second percentage (0% = top of the photo, 100% = bottom). --- */
+@media (max-width: 760px) { .about__portrait { object-position: center 72%; } }

@@ -45,6 +45,12 @@ enableRobotsTXT = true
   # which not every app shows in previews. Only resolves once the site is live.
   ogImage = "https://blog.dokkoreal.com/images/og.png"
 
+  # --- About page (/about/, Nuno's About layout) ---
+  # Heading: each span is one stacked line on desktop; they run together on phones.
+  # The "accent" class colours that line in the accent.
+  aboutHeading = '<span class="about__title-part">Data nerd.</span> <span class="about__title-part">Policy researcher.</span> <span class="about__title-part accent">Tinkerer.</span>'
+  portrait = "images/portrait.jpg"   # assets/; metadata stripped before commit. Icons under it come from socialIcons
+
   # --- home page ---
   homeHeader = "masthead"
   homeStyle = "ledger"      # a list that works for any number of posts
