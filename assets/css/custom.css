@@ -1,0 +1,13 @@
+/* Site overrides on top of Nuno. Loaded after the theme's CSS, so these win. */
+
+/* Essay body text in Iowan; everything else stays Nunito */
+.prose { font-family: "Iowan Old Style", Charter, Georgia, serif; }
+
+/* Headings, quotes and table headers keep Nuno's own font and spacing */
+.prose h2, .prose h3, .prose blockquote, .prose th { font-family: var(--font); }
+
+/* Iowan has Bold (700), not 800 */
+.prose strong { font-weight: 700; }
+
+/* Post 1's refrain line: centred and italic, set apart */
+.prose .refrain { text-align: center; font-style: italic; margin: 0.5em 0; }

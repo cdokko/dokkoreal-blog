@@ -1,0 +1,58 @@
+# Site settings for blog.dokkoreal.com (Hugo 0.169.0, theme Nuno v0.3.0).
+# Every key under [params] is a Nuno setting; its own docs are in
+# themes/nuno/README.md.
+
+baseURL = "https://blog.dokkoreal.com/"
+locale = "en-us"
+title = "Christopher Dokko-Real"
+theme = "nuno"
+
+enableRobotsTXT = true
+
+# Post URLs are /<slug>/, so post 1 lives at /photos-post-it-notes-box/
+[permalinks]
+  posts = "/:slug/"
+
+# RSS for subscribers; JSON is the index Nuno's search box reads.
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark.parser.attribute]
+    # Lets a paragraph carry a class, e.g. {.refrain} under the refrain line
+    block = true
+  [markup.goldmark.extensions.typographer]
+    # Keep quotes and dashes exactly as written; no automatic curly quotes
+    disable = true
+
+[params]
+  # --- look ---
+  ground = "brown"          # brown | green
+  defaultTheme = "auto"     # auto follows the reader's device; dark | light
+  # accent = "#e8b04b"      # dark-mode accent colour (Nuno's default)
+
+  # --- identity ---
+  brand = "Christopher Dokko-Real"
+  masthead = "Christopher<br>Dokko-Real"
+  description = "Essays by Christopher Dokko-Real."
+  copyright = "© 2026 Christopher Dokko-Real"
+
+  # --- home page ---
+  homeHeader = "masthead"
+  homeStyle = "ledger"      # a list that works for any number of posts
+  mainSections = ["posts"]
+  DateFormat = "2 January 2006"
+
+  [params.author]
+    name = "Christopher Dokko-Real"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:christopher@dokkoreal.com"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Writing"
+    url = "/posts/"
+    weight = 10

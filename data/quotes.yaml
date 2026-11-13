@@ -1,0 +1,4 @@
+# Empty on purpose: this replaces the theme's sample lines, which turns off
+# the typing animation on the home page. Add lines here to turn it back on
+# (format: themes/nuno/data/quotes.yaml).
+lines: []
