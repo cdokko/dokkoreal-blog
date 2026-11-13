@@ -35,8 +35,15 @@ enableRobotsTXT = true
   brand = "Dokko-Real"       # the name in the top-left of the nav
   masthead = "but why not, tho"
   tagline = "building,\nsystems,\nthinking,\n& finding out"   # \n = line break (custom.css keeps them)
-  description = "Essays by Christopher Dokko-Real."
+  description = "ideas on datawork and the human experience by christopher dokko-real"   # search results and home link previews
   copyright = "© 2026 Christopher Dokko-Real"
+
+  # --- icons and link previews ---
+  # favicon: assets/favicon.ico is picked up automatically (16, 32, 48 px inside)
+  appleTouchIcon = "apple-touch-icon.png"   # static/, 180x180, iPhone home screen
+  # Absolute URL so the PNG is served as-is; Nuno would otherwise convert it to WebP,
+  # which not every app shows in previews. Only resolves once the site is live.
+  ogImage = "https://blog.dokkoreal.com/images/og.png"
 
   # --- home page ---
   homeHeader = "masthead"
@@ -57,3 +64,8 @@ enableRobotsTXT = true
     name = "Writing"
     url = "/posts/"
     weight = 10
+  [[menu.main]]
+    identifier = "about"     # Nuno keeps the "about" entry in the nav on phones
+    name = "About"
+    url = "/about/"
+    weight = 20
