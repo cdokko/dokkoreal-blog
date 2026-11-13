@@ -33,7 +33,8 @@ enableRobotsTXT = true
 
   # --- identity ---
   brand = "Christopher Dokko-Real"
-  masthead = "Christopher<br>Dokko-Real"
+  masthead = "but why does it exist, tho"
+  tagline = "building, systems, thinking, finding out"
   description = "Essays by Christopher Dokko-Real."
   copyright = "© 2026 Christopher Dokko-Real"
 
