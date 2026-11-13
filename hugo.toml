@@ -32,9 +32,9 @@ enableRobotsTXT = true
   # accent = "#e8b04b"      # dark-mode accent colour (Nuno's default)
 
   # --- identity ---
-  brand = "Christopher Dokko-Real"
-  masthead = "but why does it exist, tho"
-  tagline = "building, systems, thinking, finding out"
+  brand = "Dokko-Real"       # the name in the top-left of the nav
+  masthead = "but why not, tho"
+  tagline = "building,\nsystems,\nthinking\n& finding out"   # \n = line break (custom.css keeps them)
   description = "Essays by Christopher Dokko-Real."
   copyright = "© 2026 Christopher Dokko-Real"
 
