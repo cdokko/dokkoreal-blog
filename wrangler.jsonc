@@ -1,0 +1,15 @@
+// Cloudflare Workers (static assets) config for blog.dokkoreal.com.
+// Hugo builds into ./public; Cloudflare serves those files with no Worker code.
+// HUGO_VERSION is set as a build variable in the Cloudflare dashboard, not here.
+{
+  "name": "dokkoreal-blog",
+  "compatibility_date": "2026-11-12",
+  "build": { "command": "hugo --gc --minify" },
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page",       // serves Nuno's 404.html
+    "html_handling": "auto-trailing-slash"  // /slug and /slug/ both work
+  },
+  "workers_dev": true,     // keep the *.workers.dev address; can be set false after cutover
+  "preview_urls": true
+}
