@@ -1,9 +1,9 @@
 ---
 title: "A Path Off the Main Road"
-date: 2026-11-12
+date: 2026-11-13
 description: "If I want to host a dinner party, it turns out I need to build a road to my house first."
 slug: "a-path-off-the-main-road"
-draft: true
+draft: false
 ---
 
 There’s a lot of dark and scary places on the social internet, but as jaded as I sometimes feel, on some fundamental level, I still believe in its promise — that it can enable new and vibrant forms of human connection. It’s not even that the popular platforms are necessarily bad as a collection of features, but there’s ads, trolls, slop, social engineering — it’s San Diego ComicCon, not a dinner party at my house.
