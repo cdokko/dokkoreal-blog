@@ -34,7 +34,7 @@ enableRobotsTXT = true
   # --- identity ---
   brand = "Dokko-Real"       # the name in the top-left of the nav
   masthead = "but why not, tho"
-  tagline = "building,\nsystems,\nthinking\n& finding out"   # \n = line break (custom.css keeps them)
+  tagline = "building,\nsystems,\nthinking,\n& finding out"   # \n = line break (custom.css keeps them)
   description = "Essays by Christopher Dokko-Real."
   copyright = "© 2026 Christopher Dokko-Real"
 
